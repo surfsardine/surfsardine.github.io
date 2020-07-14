@@ -1,0 +1,143 @@
+@font-face {
+	font-family: Sacramento;
+	src: url('../fonts/sacramento.ttf') format("truetype");
+}
+
+@font-face {
+	font-family: Nunito;
+	src: url('../fonts/Nunito-Regular.ttf') format("truetype");
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	[class*="col-"] {
+		width: 100%;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.col-s-1 {width: 8.33%;}
+	.col-s-2 {width: 16.66%;}
+	.col-s-3 {width: 25%;}
+	.col-s-4 {width: 33.33%;}
+	.col-s-5 {width: 41.66%;}
+	.col-s-6 {width: 50%;}
+	.col-s-7 {width: 58.33%;}
+	.col-s-8 {width: 66.66%;}
+	.col-s-9 {width: 75%;}
+	.col-s-10 {width: 83.33%;}
+	.col-s-11 {width: 91.66%;}
+	.col-s-12 {width: 100%;}
+}
+
+[class*="col-"] {
+	float: left;
+	padding: 15px;
+	border: 0px solid red;
+}
+
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+body {
+	--headerColor: black;
+	--datetimeColor: #686868;
+	--linkColor: #ff0000;
+	max-width: 960px;
+	margin: 0 auto;
+	font-family: Nunito, Arial, sans-serif;
+}
+
+a {
+	color: var(--linkColor);
+}
+
+h1 {
+	color: var(--headerColor);
+}
+
+@media only screen and (max-width: 800px) {
+	div.content {background-image: url('../images/flowers-tl-xs.jpg');}
+}
+
+@media only screen and (min-width: 800px) {
+	div.content {background-image: url('../images/flowers-tl-s.jpg');}
+}
+
+div.content {
+	background-position: right top;
+	background-repeat: no-repeat;
+	padding-top: 70px;
+	padding-bottom: 0px;
+}
+
+.header h1 {
+	font-family: Sacramento;
+	font-size: 80px;
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+.header h2 {
+	font-size: 28px;
+	color: var(--datetimeColor);
+	text-align: center;
+	margin-top: 0px;
+}
+
+.header p {
+	font-size: 22px;
+	text-align: center;
+}
+
+.card {
+	text-align: center;
+}
+
+.card h1 {
+	font-family: Sacramento;
+	font-size: 52px;
+	margin-bottom: 10px;
+}
+
+.card h2 {
+	font-size: 18px;
+	color: var(--datetimeColor);
+	margin-top: 0px;
+}
+
+.card div {
+	margin-top: 15px;
+	font-size: 18px;
+}
+
+.notes h1 {
+	font-family: Sacramento;
+	font-size: 52px;
+	text-align: center;
+}
+
+.notes p {
+	margin-top: 12px;
+	margin-bottom: 12px;
+	font-size: 18px;
+	text-align: center;
+}
+
+.contacts {
+	padding-bottom: 0px;
+}
+
+.contacts h1 {
+	font-family: Sacramento;
+	font-size: 52px;
+	text-align: center;	
+}
